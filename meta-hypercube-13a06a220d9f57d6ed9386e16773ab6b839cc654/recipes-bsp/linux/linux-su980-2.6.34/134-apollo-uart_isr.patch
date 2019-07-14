@@ -1,0 +1,23 @@
+diff -Naupr linux-2.6.34.orig/drivers/serial/ip3106.c linux-2.6.34/drivers/serial/ip3106.c
+--- linux-2.6.34.orig/drivers/serial/ip3106.c	2010-12-07 17:48:32.493451641 -0600
++++ linux-2.6.34/drivers/serial/ip3106.c	2010-12-07 18:01:05.581452485 -0600
+@@ -704,7 +704,18 @@ static irqreturn_t ip3106_int(int irq, v
+ 			if(uap->flowctrl == (IXON|IXOFF)) {
+ 				UART_PUT_THR(port,0x13);
+ 			}
+-			ip3106_rx_chars(port);
++
++                        /*
++                         * Sometimes we get an interrupt where
++                         * IIR claims there's data in the RX FIFO,
++                         * but the FIFO has no data. Here we detect
++                         * that and read RBR to clear the interrupt.
++                         */
++                        if ((UART_GET_LSR(port) & IP3106_UART_LSR_DR_MSK) == 0) {
++                            UART_GET_RBR(port);
++                        } else {
++                            ip3106_rx_chars(port);
++                        }
+ 
+ 			if(uap->flowctrl == CRTSCTS) {
+ 				if(uap->autortscts == 0) {

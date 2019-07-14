@@ -1,0 +1,12 @@
+diff -Naur linux-2.6.34.origin/drivers/net/LIPP_6300ETH/src/gmac_drv.h linux-2.6.34/drivers/net/LIPP_6300ETH/src/gmac_drv.h
+--- linux-2.6.34.origin/drivers/net/LIPP_6300ETH/src/gmac_drv.h	2013-04-17 11:09:11.000000000 +0800
++++ linux-2.6.34/drivers/net/LIPP_6300ETH/src/gmac_drv.h	2013-04-17 11:19:43.710575898 +0800
+@@ -222,7 +222,7 @@
+ #define ENABLE_ETH_TOOL
+ 
+ /* Number of descriptors for transmit side */
+-#define HW_DESCR_QUEUE_LEN_TX  (80)
++#define HW_DESCR_QUEUE_LEN_TX  (800)
+ 
+ /* Number of descriptors for receive side */
+ #define HW_DESCR_QUEUE_LEN_RX  (80)

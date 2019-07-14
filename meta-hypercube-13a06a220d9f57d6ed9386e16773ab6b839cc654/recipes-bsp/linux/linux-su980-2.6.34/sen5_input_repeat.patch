@@ -1,0 +1,13 @@
+--- linux-2.6.34/drivers/input/input-orig.c	2012-11-13 21:08:38.630322871 +0800
++++ linux-2.6.34/drivers/input/input.c	2012-11-13 21:26:10.414295844 +0800
+@@ -1632,8 +1632,8 @@
+ 	if (!dev->rep[REP_DELAY] && !dev->rep[REP_PERIOD]) {
+ 		dev->timer.data = (long) dev;
+ 		dev->timer.function = input_repeat_key;
+-		dev->rep[REP_DELAY] = 250;
+-		dev->rep[REP_PERIOD] = 33;
++		dev->rep[REP_DELAY] = 500;
++		dev->rep[REP_PERIOD] = 100;
+ 	}
+ 
+ 	if (!dev->getkeycode)
