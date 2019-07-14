@@ -1,85 +1,6 @@
 # Extra repositories for PLi's OE: https://github.com/OpenPLi/openpli-oe-core
-
-## Amlogic:
-* wetekplay
-* wetekplay2
-* x8hp
-
-## AZBox:
-* azboxhd
-* azboxme
-* azboxminime
-
-## Ceryon:
-* 9910lx
-* 9911lx
-* e4hd
-* e4hdcombo
-* e4hdhybrid
-* odin2hybrid
-* odinplus
-* protek4k
-* sf208
-* sf228
-* sf238
-* singleboxlcd
-* twinboxlcd
-* twinboxlcdci5
-
-## DAGS:
-* force1
-* force1plus
-* force2
-* force2nano
-* force2plus
-* force2plushv
-* force2se
-* force3uhd
-* force3uhdplus
-* iqonios100hd
-* iqonios200hd
-* iqonios300hd
-* iqonios300hdv2
-* mediaart200hd
-* mediabox
-* megaforce1plus
-* megaforce2
-* optimussos
-* optimussos1
-* optimussos1plus
-* optimussos2
-* optimussos2plus
-* optimussos3plus
-* roxxs200hd
-* tm2t
-* tm4ksuper
-* tmnano
-* tmnano2super
-* tmnano2t
-* tmnano3t
-* tmnanom3
-* tmnanose
-* tmnanosecombo
-* tmnanosem2
-* tmnanosem2plus
-* tmnanoseplus
-* tmsingle
-* tmtwin
-* tmtwin4k
-* valalinux
-* worldvisionf1
-* worldvisionf1plus
-
-## Dinobot:
-* anadol4k
-* axashis4kcombo
-* axashis4kcomboplus
-* dinobot4k
-* dinobot4kl
-* dinobot4kmini
-* dinobot4kplus
-* dinobot4kse
-* mediabox4k
+## hypercube:
+* su980
 
 ## Dreambox:
 * dm500hd
@@ -96,69 +17,15 @@
 * dm900
 * dm920
 
-## Entwopia:
-* bre2ze
-* enfinity
-* evomini
-* evominiplus
-* marvel1
-* viperslim
-* x2plus
-
 ## Fulan:
 * spark
 * spark7162
 
-## INI:
-* atemio5x00
-* atemio6000
-* atemio6100
-* atemio6200
-* atemionemesis
-* beyonwizt2
-* beyonwizt3
-* beyonwizt4
-* bwidowx
-* bwidowx2
-* evoslim
-* heroboxex4hd
-* mbhybrid
-* mbmini
-* mbminiplus
-* mbtwin
-* mbultra
-* opticumtt
-* sezam1000hd
-* sezam5000hd
-* sezammarvel
-* ventonhdx
-* xpeedlx
-* xpeedlx3
-* xsolomini3
 
 ## Octagon:
 * sf4008
 * sf5008
 
-## Odin:
-* axase3
-* axase3c
-* axodin
-* axodinc
-* classm
-* evo
-* evoe3hd
-* galaxym6
-* genius
-* geniuse3hd
-* maram9
-* starsatlx
-
-## Raspberry Pi:
-* raspberrypi
-* raspberrypi0
-* raspberrypi2
-* raspberrypi3
 
 ## XCore:
 * bcm7358
